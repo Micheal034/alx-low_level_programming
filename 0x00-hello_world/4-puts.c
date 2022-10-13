@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
-* main prints
-* Always return 0 (SUCCESSFUL)
+*
+* main-printing
+*
+* Return: Always 0 (Successful)
 */
 int main(void)
 {
