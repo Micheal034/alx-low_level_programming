@@ -7,20 +7,10 @@ int main(void)
 {
 	char ch, ch_f, ch_r;
 
-	for (ch = 'a'; ch < 'e'; ch++)
+	for (ch = 'a', ch_f = 'f', ch_r = 'r'; ch < 'e', ch_f < 'q', ch_r <= 'z'; ch++, ch_f++, ch_r++)
 	{
 		putchar(ch);
-	}
-
-
-	for (ch_f = 'f'; ch_f < 'q'; ch_f++)
-	{
 		putchar(ch_f);
-	}
-
-
-	for (ch_r = 'r'; ch_r <= 'z'; ch_r++)
-	{
 		putchar(ch_r);
 	}
 
