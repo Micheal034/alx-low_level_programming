@@ -5,4 +5,17 @@
 */
 int main(void)
 {
-	
+	int sgl_digit;
+
+	for (sgl_digit = '0'; sgl_digit <= '9'; sgl_digit++)
+	{
+		putchar(sgl_digit);
+		if (sgl_digit != '9')
+		{
+			putchar (',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+	return (0);
+}
