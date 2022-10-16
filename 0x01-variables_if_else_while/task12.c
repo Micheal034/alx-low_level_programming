@@ -1,0 +1,50 @@
+#include "stdio.h"
+/**
+* main-prints all possible combinations of two two-digit numbers
+* Return: Always 0
+*/
+int main(void)
+{
+	int dgt1;
+
+	int dgt2;
+
+	int dgt3;
+
+	int dgt4;
+
+	for (dgt1 = '0'; dgt1 <= '9'; dgt1++)
+	{
+		for (dgt2 = '0'; dgt2 <= '8'; dgt2++)
+		{
+			putchar(dgt1);
+			putchar(dgt2);
+
+			if ((dgt1 == '9') && (dgt2 == '8'))
+				continue;
+			{
+				putchar(' ');
+
+				for (dgt3 = '0'; dgt3 <= '9'; dgt3++)
+				{
+					for (dgt4 = dgt3 + 1; dgt4 <= '9'; dgt4++)
+					{
+						putchar(dgt3);
+						putchar(dgt4);
+
+						if ((dgt3 == '9') && (dgt4 == '9'))
+							continue;
+						{
+							putchar(',');
+							putchar(' ');
+						}
+					}
+				}
+			}
+		}
+	}				
+				 
+
+	putchar('\n');
+	return (0);
+}
