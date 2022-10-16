@@ -23,13 +23,14 @@ int main(void)
 
 				if ((dgt1 == '7') && (dgt2 == '8') && (dgt3 == '9'))
 					continue;
-					{
-						putchar(',');
-						putchar(' ');
-					}
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
-		putchar('\n');
-		return (0);
 	}
+
+	putchar('\n');
+	return (0);
 }
