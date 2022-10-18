@@ -9,32 +9,22 @@ int main(void)
 
 	int dgt2;
 
-	int dgt3;
-
-	int dgt4;
-
-	for (dgt1 = '0'; dgt1 <= '9'; dgt1++)
+	for (dgt1 = '0'; dgt1 <= 98; dgt1++)
 	{
-		for (dgt2 = '0'; dgt2 < '9'; dgt2++)
+		for (dgt2 = dgt1 + 1; dgt2 <= 99; dgt2++)
 		{
-			for (dgt3 = '0'; dgt3 <= '9'; dgt3++)
-			{
-				for (dgt4 = '1'; dgt4 <= '9'; dgt4++)
-				{
-					putchar(dgt1);
-					putchar(dgt2);
-					putchar(' ');
-					putchar(dgt3);
-					putchar(dgt4);
+			putchar((dgt1 / 10) + '0');
+			putchar((dgt1 % 10) + '0');
+			putchar(' ');
+			putchar((dgt2 / 10) + '0');
+			putchar((dgt2 % 10) + '0');
 
-					if ((dgt1 == '9') && (dgt2 == '8') && (dgt3 == '9') && (dgt4 == '9'))
-						continue;
-					{
-						putchar(',');
-						putchar(' ');
-					}
+			if ((dgt1 == 98) && (dgt2 == 99))
+				continue;
+				{
+					putchar(',');
+					putchar(' ');
 				}
-			}
 		}
 	}
 	putchar('\n');
