@@ -21,10 +21,10 @@ int main(void)
 
 			if ((dgt1 == 98) && (dgt2 == 99))
 				continue;
-				{
+			{
 					putchar(',');
 					putchar(' ');
-				}
+			}
 		}
 	}
 	putchar('\n');
