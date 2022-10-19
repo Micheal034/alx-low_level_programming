@@ -4,7 +4,6 @@
  * @a:number to compute last digit.
  * Return:last digit.
  */
-l
 int print_last_digit(int a)
 {
 	int last_digit;
